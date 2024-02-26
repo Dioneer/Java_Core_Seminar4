@@ -27,6 +27,14 @@ public class ArrayUtils {
             System.out.println();
         }
     }
+
+    /**
+     * check array
+     * @param arr ARRAY
+     * @return summ
+     * @throws MyArraySizeException uncorrect array size
+     * @throws MyArrayDataException uncorrect data format
+     */
     public int processArray(String[][] arr) throws MyArraySizeException, MyArrayDataException {
         if(arr.length!=4 || arr[0].length!=4){
             throw new MyArraySizeException("Uncorrect array size", arr.length, arr[0].length);
